@@ -1,8 +1,9 @@
 {
-    "name": "kphoen/sms-sender-bundle",
+    "name": "avtonom/sms-sender-bundle",
     "description": "Integrates the SmsSender library in Symfony2 applications",
     "keywords": ["sms", "abstraction"],
     "type": "symfony-bundle",
+    "homepage": "https://github.com/Avtonom/KPhoenSmsSenderBundle",
     "license": "MIT",
     "authors": [
         {
@@ -14,7 +15,7 @@
     "require": {
         "symfony/framework-bundle": ">=2.1.0",
         "psr/log": "~1.0",
-        "Carpe-Hora/SmsSender": "~1.4.0"
+        "avtonom/sms-sender": "dev-master"
     },
     "require-dev": {
         "symfony/symfony": ">=2.1.0",
