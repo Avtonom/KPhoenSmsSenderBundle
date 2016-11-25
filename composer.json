@@ -15,7 +15,7 @@
     "require": {
         "symfony/framework-bundle": ">=2.1.0",
         "psr/log": "~1.0",
-        "avtonom/sms-sender": "dev-master"
+        "avtonom/sms-sender": "~1.5"
     },
     "require-dev": {
         "symfony/symfony": ">=2.1.0",
