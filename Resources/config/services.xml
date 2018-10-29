@@ -7,6 +7,8 @@
         <parameter key="sms.sender.class">SmsSender\SmsSender</parameter>
         <parameter key="sms.logged_sender.class">KPhoen\SmsSenderBundle\SmsSender\LoggableSmsSender</parameter>
         <parameter key="sms.delayed_sender.class">SmsSender\DelayedSender</parameter>
+        <parameter key="sms.http_adapter.buzz.class">SmsSender\HttpAdapter\BuzzHttpAdapter</parameter>
+        <parameter key="sms.http_adapter.curl.class">SmsSender\HttpAdapter\CurlHttpAdapter</parameter>
     </parameters>
 
     <services>
@@ -33,10 +35,10 @@
         </service>
 
         <!-- HTTP adapters -->
-        <service id="sms.http_adapter.buzz" class="SmsSender\HttpAdapter\BuzzHttpAdapter" public="false">
+        <service id="sms.http_adapter.buzz" class="%sms.http_adapter.buzz.class%" public="false">
         </service>
 
-        <service id="sms.http_adapter.curl" class="SmsSender\HttpAdapter\CurlHttpAdapter" public="false">
+        <service id="sms.http_adapter.curl" class="%sms.http_adapter.curl.class%" public="false">
         </service>
 
         <!-- Pools -->
